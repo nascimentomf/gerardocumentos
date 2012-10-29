@@ -6,7 +6,7 @@
 * Date:    2011-06-18                                                          *
 * Author:  Olivier PLATHEY                                                     *
 *******************************************************************************/
-
+define('FPDF_FONTPATH', 'font/');
 define('FPDF_VERSION','1.7');
 
 class FPDF
