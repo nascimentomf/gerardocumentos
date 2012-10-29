@@ -39,7 +39,16 @@
   		<form action="pdf.php" method="post">
   		  <input type="hidden" name="score" value="<?php echo $score;?>"/>
   		  <input type="hidden" name="nome" value="<?php echo $cert_nome;?>"/>
-  		  <input type="submit" value="Gerar" />
+  		  <input type="submit" value="Gerar (PDF)" />
+  		</form>
+  		<?php
+  		//Fornece link para gerar rtf
+  		echo 'Clique aqui para gerar o certificado (RTF)';
+  		?>
+  		<form action="rtf.php" method="post">
+  		  <input type="hidden" name="score" value="<?php echo $score;?>"/>
+  		  <input type="hidden" name="nome" value="<?php echo $cert_nome;?>"/>
+  		  <input type="submit" value="Gerar (RTF)" />
   		</form>
   		<?php
   	}
